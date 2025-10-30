@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VitalSite: Immediate Care Map</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+e2jT9JzA1yIxyb1W5Ycq63jH3zVxHzuZ0PtkfQmY="
+    crossorigin=""
+  />
+</head>
+<body>
+  <header>
+    <h1>VitalSite: Immediate Care Map</h1>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div id="filter-buttons">
+    <button id="show-all" class="active">All</button>
+    <button id="show-pharmacies">24-Hour Pharmacies</button>
+    <button id="show-aeds">AED Locations</button>
+  </div>
+
+  <!-- Map Container -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1jzsJbFMCqE9i8kAMpXbtbZoM3KpAo3CwYv+8m3I="
+    crossorigin=""
+  ></script>
+
+  <!-- App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
